@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanR - Contact Us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+
+  <style>
+    .hero.is-contact {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .contact-box {
+      border-radius: 12px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    .section-title { margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar is-white">
+  <div class="navbar-brand">
+    <a href="index.html" class="navbar-item has-text-weight-bold is-size-4">CleanR</a>
+    <a role="button" class="navbar-burger" data-target="navMenu">
+      <span></span><span></span><span></span>
+    </a>
+  </div>
+
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+      <a href="index.html" class="navbar-item">Home</a>
+      <a href="services.html" class="navbar-item">Services</a>
+      <a href="about.html" class="navbar-item">About</a>
+      <a href="gallery.html" class="navbar-item">Gallery</a>
+      <a class="navbar-item is-active">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero is-contact is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title has-text-white is-2">Contact Us</h1>
+      <h2 class="subtitle has-text-white is-5">We’re ready to make your space spotless</h2>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="columns">
+
+      <!-- FORM -->
+      <div class="column is-6">
+        <h2 class="title section-title">Send Us a Message</h2>
+
+        <div class="box contact-box">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Your Name">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Your Email">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Phone</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Your Phone Number">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Tell us what you need..."></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary is-fullwidth">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="column is-6">
+        <h2 class="title section-title">Get in Touch</h2>
+
+        <div class="box contact-box">
+          <p><span class="icon"><i class="fas fa-phone"></i></span> +234 000 000 0000</p>
+          <p class="mt-2"><span class="icon"><i class="fas fa-envelope"></i></span> info@cleanr.com</p>
+          <p class="mt-2"><span class="icon"><i class="fas fa-map-marker-alt"></i></span> Abuja, Nigeria</p>
+
+          <div class="mt-4">
+            <a href="https://wa.me/2340000000000" class="button is-success is-fullwidth">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="box contact-box mt-4 map-container">
+          <iframe src="https://maps.google.com/maps?q=Abuja&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section has-text-centered">
+  <div class="container">
+    <h2 class="title">Need urgent cleaning?</h2>
+    <a href="https://wa.me/2340000000000" class="button is-primary is-large">Book Instantly</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p><strong>CleanR</strong> &copy; 2026. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.navbar-burger').addEventListener('click', () => {
+    document.querySelector('.navbar-burger').classList.toggle('is-active');
+    document.querySelector('.navbar-menu').classList.toggle('is-active');
+  });
+</script>
+
+</body>
+</html>
